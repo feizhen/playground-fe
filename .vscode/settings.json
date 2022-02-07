@@ -5,5 +5,18 @@
     "*.wxs": "javascript",
     "*.ttml": "xml",
     "*.ttss": "css"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.meta": true,
+    "library/": true,
+    "local/": true,
+    "temp/": true,
+    "**/node_modules": false
   }
 }
