@@ -1,13 +1,16 @@
 import { IconBell, IconHelpCircle, IconHistogram, IconHome, IconLive, IconSemiLogo, IconSetting } from '@douyinfe/semi-icons';
-import { Avatar, Breadcrumb, Button, Layout, Nav, Skeleton } from '@douyinfe/semi-ui';
+import { Avatar, Button, Layout, Nav } from '@douyinfe/semi-ui';
 import './style.less';
 
 const { Header, Content, Sider } = Layout;
 
+/**
+  这里的 children 主要是各个子应用
+ */
 const LayoutContainer: React.FC = ({ children }) => {
   return (
     <Layout style={{ border: '1px solid var(--semi-color-border)' }} className="layout-container">
-      <Header style={{ backgroundColor: 'var(--semi-color-bg-1)' }}>
+      <Header style={{ backgroundColor: 'var(--semi-color-bg-1)', }}>
         <Nav mode="horizontal" defaultSelectedKeys={['Home']}>
           <Nav.Header>
             <IconSemiLogo style={{ fontSize: 36 }} />
@@ -40,7 +43,7 @@ const LayoutContainer: React.FC = ({ children }) => {
       </Header>
 
       <Layout>
-        <Sider style={{ backgroundColor: 'var(--semi-color-bg-1)' }}>
+        <Sider style={{ backgroundColor: 'var(--semi-color-bg-1)', }}>
           <Nav
             style={{ maxWidth: 220, height: '100%' }}
             defaultSelectedKeys={['Home']}
@@ -62,13 +65,7 @@ const LayoutContainer: React.FC = ({ children }) => {
             backgroundColor: 'var(--semi-color-bg-0)',
           }}
         >
-          <Breadcrumb
-            style={{
-              marginBottom: '24px',
-            }}
-            routes={['首页', '当这个页面标题很长时需要省略', '上一页', '详情页']}
-          />
-          <div>
+          <div id="app-container">
             {children}
           </div>
         </Content>
