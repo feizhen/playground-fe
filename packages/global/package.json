@@ -1,0 +1,9 @@
+{
+  "name": "@pg/global",
+  "version": "0.0.1",
+  "private": true,
+  "description": "global settings",
+  "main": "index.js",
+  "scripts": {
+  }
+}

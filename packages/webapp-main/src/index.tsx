@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+// import App from './App';
+import LayoutContainer from './layouts/LayoutContainer/index';
+import 'reset-css';
+
 import { reportWebVitals } from './utils';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LayoutContainer >
+      Let's Play
+    </LayoutContainer>
   </React.StrictMode>,
   document.getElementById('root')
 );
