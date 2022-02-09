@@ -9,9 +9,7 @@ import { reportWebVitals } from './utils';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LayoutContainer >
-      Let's Play
-    </LayoutContainer>
+    <LayoutContainer />
   </React.StrictMode>,
   document.getElementById('root')
 );

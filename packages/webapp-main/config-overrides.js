@@ -5,6 +5,9 @@ const { override, addLessLoader, adjustStyleLoaders, overrideDevServer } = requi
 const devServerConfig = () => config => {
   return {
       ...config,
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
   }
 }
 
